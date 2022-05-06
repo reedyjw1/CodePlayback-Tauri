@@ -5,8 +5,9 @@ import './file-open.css'
 function OpenFolderComponent(props) {
 
     function openFilePicker(e) {
-        open().then((path) => { 
-            console.log(path);
+        // Get selected file and pass path to parent
+        open().then((path) => {
+            props.parentCallback(path)
         });
     }
 
