@@ -15,7 +15,7 @@ function HomeComponent(props) {
     }
 
     return (
-        <div className="home">
+        <div>
             {(filePath === "") ? <OpenFolderComponent parentCallback={filePathCallback} /> : <SetupComponent fileText={filePath}/>}
         </div>
     )
