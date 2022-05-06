@@ -52,6 +52,9 @@
         "open": true,
         "save": true
       },
+      "fs": {
+        "readFile": true
+      },
       "all": true
     },
     "windows": [
