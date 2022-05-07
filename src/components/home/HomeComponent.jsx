@@ -1,7 +1,9 @@
 import { fs } from "@tauri-apps/api";
 import OpenFolderComponent from "../open-folder/OpenFolderComponent";
 import SetupComponent from "../setup/SetupComponent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { open } from "@tauri-apps/api/dialog";
+import { listen } from '@tauri-apps/api/event'
 import './home.css'
 
 function HomeComponent(props) {
